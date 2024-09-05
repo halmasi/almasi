@@ -11,7 +11,14 @@ function MenuButton({ children, link }: Props) {
   const path = usePathname();
 
   return (
-    <Link className={path === link ? "text-red-800" : undefined} href={link}>
+    <Link
+      className={`${
+        (path.startsWith(link) && link !== "/") || path === link
+          ? "text-red-800 border-red-700"
+          : "border-gray-300"
+      } p-3 border-b-4`}
+      href={link}
+    >
       {children}
     </Link>
   );

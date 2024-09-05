@@ -13,6 +13,8 @@ export default function Titles({
   status?: string;
 }) {
   return (
-    <h1 className={`text-4xl text-center ${font.className}`}>{children}</h1>
+    <h1 className={`${font.className} text-4xl text-center pb-10`}>
+      {children}
+    </h1>
   );
 }
