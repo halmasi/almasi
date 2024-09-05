@@ -1,6 +1,6 @@
 import { Russo_One } from "next/font/google";
 
-const font = Russo_One({
+const russo = Russo_One({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -13,7 +13,7 @@ export default function Titles({
   status?: string;
 }) {
   return (
-    <h1 className={`${font.className} text-4xl text-center pb-10`}>
+    <h1 className={`${russo.className} text-4xl text-center pb-10`}>
       {children}
     </h1>
   );

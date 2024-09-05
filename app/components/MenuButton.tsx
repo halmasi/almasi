@@ -5,13 +5,15 @@ import { usePathname } from "next/navigation";
 interface Props {
   children: React.ReactNode;
   link: string;
+  func?: () => void;
 }
 
-function MenuButton({ children, link }: Props) {
+function MenuButton({ children, link, func }: Props) {
   const path = usePathname();
 
   return (
     <Link
+      onClick={func}
       className={`${
         (path.startsWith(link) && link !== "/") || path === link
           ? "text-red-800 border-red-700"
