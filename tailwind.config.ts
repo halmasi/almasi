@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        tangerine: ["var(--font-tangerine)"],
+      animation: {
+        borderSpin: "borderSpin 3.6s linear infinite",
+      },
+      keyframes: {
+        borderSpin: {
+          "0%": { transform: "rotate(65deg)" },
+          "25%": { transform: "rotate(-55deg)" },
+          "50%": { transform: "rotate(-115deg)" },
+          "75%": { transform: "rotate(-235deg)" },
+          "99%": { transform: "rotate(-294deg)" },
+          "100%": { transform: "rotate(-295deg)" },
+        },
       },
     },
   },
