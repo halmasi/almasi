@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutCard() {
   return (
-    <div className="container flex flex-col rounded-2xl border-[.5px] border-gray-300 md:flex-row">
+    <div className="container flex flex-col rounded-2xl border-[.5px] border-gray-300 self-center md:flex-row">
       <Image
         width={500}
         height={0}

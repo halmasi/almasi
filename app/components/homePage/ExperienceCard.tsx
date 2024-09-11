@@ -10,15 +10,17 @@ export default function ExperienceCard({ children, id, title }: Props) {
   return (
     <div
       className={`my-10 flex justify-between items-center ${
-        id % 2 == 0 ? "md:flex-row-reverse" : undefined
+        id % 2 == 0 ? "md:flex-row-reverse" : "flex-row"
       }`}
     >
-      <div className="hidden md:flex md:w-5/12"></div>
-      <div className=" flex items-center bg-red-900 w-12 h-12 rounded-full">
-        <h2 className="mx-auto font-semibold text-lg text-white">{id}</h2>
+      <div className="hidden md:block md:w-5/12"></div>
+
+      <div className="flex items-center ml-[10px] md:ml-[1px] w-[40px] aspect-square rounded-full bg-slate-50  justify-center">
+        <div className=" bg-red-900 animate-pulse rounded-full w-[calc(100%-20px)] aspect-square"></div>
+        <h3 className="font-semibold text-lg text-white"></h3>
       </div>
       <div className=" border-2 rounded-lg shadow-xl w-3/4 md:w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-black text-xl">{title}</h3>
+        <h2 className="mb-3 font-bold text-black text-xl">{title}</h2>
         <p className="text-gray-800 leading-tight">{children}</p>
       </div>
     </div>
