@@ -13,7 +13,9 @@ export default function Titles({
   status?: string;
 }) {
   return (
-    <h1 className={`${russo.className} text-4xl text-center pb-10`}>
+    <h1
+      className={`${russo.className} text-4xl text-center pb-10 text-green-900`}
+    >
       {children}
     </h1>
   );

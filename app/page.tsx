@@ -7,12 +7,9 @@ export default function Home() {
   return (
     <>
       <header>
-        <Titles>hello world</Titles>
+        <Titles>{"<Hossein Almasi/>"}</Titles>
       </header>
       <main className="flex flex-col justify-between mb-10">
-        {/* <BlogCart>
-          <p>hello this is Hossein</p>
-        </BlogCart> */}
         <div className="flex flex-col rounded-2xl border-[.5px] border-gray-300 md:flex-row">
           <Image
             width={500}
@@ -25,23 +22,25 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center w-[100%]">
             <span className="text-center m-3">
               <p>
-                Hi, my name is <strong>Hossein Almasi</strong>,I graduated with
-                a bachelor's degree in Software Engineering from the Technical
-                and Vocational Training Organization of Iran.
+                Hi, my name is <strong>Hossein Almasi</strong>, I graduated with
+                a bachelor&apos;s degree in Software Engineering from the
+                Technicaland Vocational Training Organization of Iran.
               </p>
               <p>
-                I'm in love with programming and web development and do code on
-                my free time
+                I&apos;m in love with programming and web development and I love
+                coding on my free time.
               </p>
             </span>
             <div className="flex flex-col mb-3 space-y-5 md:flex-row md:space-x-5 md:space-y-0  ">
               <GradientButton
+                link={"/contact"}
                 size={"h-[30px] w-[100px]"}
                 color={"from-green-600 to-green-800"}
               >
                 <h2>contact me</h2>
               </GradientButton>
               <GradientButton
+                link={"/works"}
                 size={"h-[30px] w-[100px]"}
                 color={"from-red-600 to-red-800"}
               >

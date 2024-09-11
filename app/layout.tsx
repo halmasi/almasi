@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${inter.className} bg-slate-50`}>
-        <p className="text-center text-gray-200 text-lg bg-green-900 bg-[url('/pcb.svg')] ">
-          Hi, I'm <strong>Hossein Almasi</strong>, a web developer and
+      <body className={`${inter.className} bg-slate-50`}>
+        <p className="text-center text-gray-200 text-lg bg-green-900 bg-[url('/pcb.svg')]">
+          Hi, I&apos;m <strong>Hossein Almasi</strong>, a web developer and
           programming lover
         </p>
         <Navbar />

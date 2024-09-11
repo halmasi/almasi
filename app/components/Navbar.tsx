@@ -15,7 +15,8 @@ const navbarLinks = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Blog", link: "/blog" },
   { id: 3, name: "Skills", link: "/skills" },
-  { id: 4, name: "About me", link: "/about" },
+  { id: 4, name: "My works", link: "/works" },
+  { id: 5, name: "Contact me", link: "/contact" },
 ];
 
 function Navbar() {
