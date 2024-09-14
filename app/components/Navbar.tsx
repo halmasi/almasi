@@ -56,7 +56,11 @@ function Navbar() {
           </div>
         </div>
         {showNav && (
-          <ul className={"md:hidden flex flex-col pb-4 items-center"}>
+          <ul
+            className={
+              "md:hidden duration-300 transition-transform flex flex-col pb-4 items-center"
+            }
+          >
             {navbarLinks.map((item) => (
               <li className="my-5" key={item.id}>
                 <MenuButton func={navSeter} link={item.link}>

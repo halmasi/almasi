@@ -4,10 +4,9 @@ import React from "react";
 interface Props {
   title: string;
   level: number;
-  image: string;
 }
 
-export default function Skill({ title, level, image }: Props) {
+export default function Skill({ title, level }: Props) {
   let levels;
   let progressBarPercent;
   switch (true) {
@@ -45,7 +44,7 @@ export default function Skill({ title, level, image }: Props) {
         src={`/icons/${bgUrl}`}
         alt={title + "Logo"}
       />
-      <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-gray-700 before:transition-opacity before:duration-300 before:hover:opacity-20 before:opacity-60 before:rounded-md">
+      <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-20 before:opacity-40 before:rounded-md">
         <h2 className="text-white text-3xl font-bold">{title}</h2>
         <div className=" flex flex-col justify-end w-full h-full">
           <div className="w-full flex flex-col justify-end">

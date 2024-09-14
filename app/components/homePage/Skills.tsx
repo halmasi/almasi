@@ -3,7 +3,7 @@ import Skill from "./SkillCard";
 
 export default function Skills() {
   const skills = [
-    { id: 0, title: "JavaScript", level: 80, image: "icon/javascript.png" },
+    { id: 0, title: "JavaScript", level: 80 },
     { id: 1, title: "NodeJs", level: 80 },
     { id: 2, title: "ReactJs", level: 80 },
     { id: 3, title: "NextJs", level: 80 },
@@ -30,12 +30,7 @@ export default function Skills() {
       <div className="self-center container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-5 place-items-center">
         {skills.map((skill) => (
           <>
-            <Skill
-              key={skill.title}
-              title={skill.title}
-              level={skill.level}
-              image={skill.image}
-            />
+            <Skill key={skill.title} title={skill.title} level={skill.level} />
           </>
         ))}
       </div>
