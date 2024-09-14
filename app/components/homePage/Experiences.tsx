@@ -26,11 +26,13 @@ export default function Experiences() {
   ];
 
   return (
-    <div className="relative border-b-2">
+    <div className="relative">
       <h2 className="text-2xl md:text-center border-b-2">
         <strong>Experiences</strong>
       </h2>
+
       <span className="-z-10 absolute border-red-900 left-[29px] h-[calc(100%-33px)] border md:left-1/2"></span>
+
       {experiencesText.map((item) => (
         <ExperienceCard key={item.id} id={item.id} title={item.title}>
           {item.text}

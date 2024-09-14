@@ -51,10 +51,10 @@ export default function Skill({ title, level }: Props) {
             <p className="text-gray-800 text-center leading-tight pb-5 bg-white bg-opacity-50">
               <strong>{levels}</strong>
             </p>
-            <div className="w-full bg-gray-400 h-2.5 rounded-b-lg">
+            <div className="w-full bg-gray-400 h-2.5 rounded-b-md">
               <div
                 className={`${progressBarPercent} bg-red-700 h-2.5 ${
-                  level == 100 ? "rounded-b-lg" : "rounded-bl-lg"
+                  level == 100 ? "rounded-b-md" : "rounded-bl-md"
                 } `}
               ></div>
             </div>
