@@ -26,3 +26,7 @@
     @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-slate-50 p-0;
   }
 }
+
+.skills-bg{
+  background-size: cover;
+}

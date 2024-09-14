@@ -3,22 +3,22 @@ import Skill from "./SkillCard";
 
 export default function Skills() {
 	const skills = [
-		{ title: "JavaScript", level: 80 },
-		{ title: "NodeJs", level: 80 },
-		{ title: "ReactJs", level: 80 },
-		{ title: "NextJs", level: 80 },
-		{ title: "Express.js", level: 80 },
-		{ title: "REST APIs", level: 80 },
-		{ title: "Git", level: 80 },
-		{ title: "Linux", level: 100 },
-		{ title: "mongoDB", level: 40 },
-		{ title: "python", level: 40 },
-		{ title: "Tailwind CSS", level: 80 },
-		{ title: "HTML", level: 60 },
-		{ title: "CSS", level: 60 },
-		{ title: "SQL", level: 40 },
-		{ title: "Adobe Photoshop", level: 100 },
-		{ title: "Adobe Illustrator", level: 40 },
+		{ id: 0, title: "JavaScript", level: 80, image: "icon/javascript.png" },
+		{ id: 1, title: "NodeJs", level: 80 },
+		{ id: 2, title: "ReactJs", level: 80 },
+		{ id: 3, title: "NextJs", level: 80 },
+		{ id: 4, title: "Express.js", level: 80 },
+		{ id: 5, title: "REST APIs", level: 80 },
+		{ id: 6, title: "Git", level: 80 },
+		{ id: 7, title: "Linux", level: 100 },
+		{ id: 8, title: "mongoDB", level: 40 },
+		{ id: 9, title: "python", level: 40 },
+		{ id: 10, title: "Tailwind CSS", level: 80 },
+		{ id: 11, title: "HTML", level: 60 },
+		{ id: 12, title: "CSS", level: 60 },
+		{ id: 13, title: "SQL", level: 40 },
+		{ id: 14, title: "Adobe Photoshop", level: 100 },
+		{ id: 15, title: "Adobe Illustrator", level: 40 },
 	];
 
 	return (
@@ -30,7 +30,12 @@ export default function Skills() {
 			<div className='self-center container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-5 place-items-center'>
 				{skills.map((skill) => (
 					<>
-						<Skill key={skill.title} title={skill.title} level={skill.level} />
+						<Skill
+							key={skill.title}
+							title={skill.title}
+							level={skill.level}
+							image={skill.image}
+						/>
 					</>
 				))}
 			</div>
