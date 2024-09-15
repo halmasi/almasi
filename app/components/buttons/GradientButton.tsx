@@ -7,19 +7,28 @@ interface Props {
   size: String;
   color: String;
   link: Url;
+  shadowColor: string;
 }
 
-export default function GradientButton({ children, size, color, link }: Props) {
+export default function GradientButton({
+  children,
+  size,
+  color,
+  link,
+  shadowColor,
+}: Props) {
   return (
-    <div
-      className={`card-wrapper ${size} self-center text-black bg-gradient-to-bl ${color}`}
-    >
-      <Link
-        href={link}
-        className="card-content flex items-center justify-center text-xs"
+    <div className="relative inline-flex group">
+      <div
+        className={`card-wrapper ${size} self-center text-black bg-gradient-to-bl ${color}  hover:shadow-md ${shadowColor} duration-300`}
       >
-        <div className=" text-center">{children}</div>
-      </Link>
+        <Link
+          href={link}
+          className="card-content flex items-center justify-center text-xs"
+        >
+          <div className=" text-center">{children}</div>
+        </Link>
+      </div>
     </div>
   );
 }

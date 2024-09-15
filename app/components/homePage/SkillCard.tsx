@@ -31,8 +31,10 @@ export default function Skill({ title, level }: Props) {
       progressBarPercent = "w-[100%]";
   }
 
-  const bgUrl =
-    title.replace(/\s/g, "").split(".").join("").toLowerCase() + ".png";
+  // const bgUrl =
+  //   title.replace(/\s/g, "").split(".").join("").toLowerCase() + ".png";
+
+  const bgUrl = "javascript.png";
 
   return (
     <div className="relative max-w-xl flex flex-row flex-grow border-2 rounded-lg w-full min-h-36 md:aspect-square justify-between bg-neutral-800">
@@ -40,12 +42,12 @@ export default function Skill({ title, level }: Props) {
         className=" w-full object-cover rounded-md"
         width={500}
         height={0}
-        quality={100}
+        quality={50}
         src={`/icons/${bgUrl}`}
         alt={title + "Logo"}
       />
       <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-20 before:opacity-40 before:rounded-md">
-        <h2 className="text-white text-3xl font-bold">{title}</h2>
+        <h2 className="text-white text-2xl font-bold">{title}</h2>
         <div className=" flex flex-col justify-end w-full h-full">
           <div className="w-full flex flex-col justify-end">
             <p className="text-gray-800 text-center leading-tight pb-5 bg-white bg-opacity-50">

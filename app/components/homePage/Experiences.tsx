@@ -26,18 +26,29 @@ export default function Experiences() {
   ];
 
   return (
-    <div className="relative">
-      <h2 className="text-2xl md:text-center border-b-2">
-        <strong>Experiences</strong>
+    <>
+      <div className="relative">
+        <h2 className="text-2xl md:text-center border-b-2">
+          <strong>Experiences</strong>
+        </h2>
+
+        <span className="-z-10 absolute border-red-900 left-[29px] h-[calc(100%-33px)] border md:left-1/2"></span>
+
+        {experiencesText.map((item) => (
+          <ExperienceCard key={item.id} id={item.id} title={item.title}>
+            {item.text}
+          </ExperienceCard>
+        ))}
+      </div>
+      <h2 className="text-2xl md:text-center text-red-900 border-b-2">
+        <strong>.</strong>
+        <br />
+        <strong>.</strong>
+        <br />
+        <strong>.</strong>
+        <br />
+        <strong>The journey goes on</strong>
       </h2>
-
-      <span className="-z-10 absolute border-red-900 left-[29px] h-[calc(100%-33px)] border md:left-1/2"></span>
-
-      {experiencesText.map((item) => (
-        <ExperienceCard key={item.id} id={item.id} title={item.title}>
-          {item.text}
-        </ExperienceCard>
-      ))}
-    </div>
+    </>
   );
 }

@@ -12,15 +12,6 @@ export default function Home() {
       <main className="flex flex-col justify-between space-y-5">
         <AboutCard />
         <Experiences />
-        <h2 className="text-2xl md:text-center text-red-900 border-b-2">
-          <strong>.</strong>
-          <br />
-          <strong>.</strong>
-          <br />
-          <strong>.</strong>
-          <br />
-          <strong>The journey goes on</strong>
-        </h2>
         <Skills />
       </main>
     </>
