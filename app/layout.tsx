@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import FooterMenu from "./components/footer/FooterMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,11 @@ export default function RootLayout({
         <div className=" flex justify-center">
           <div className="w-3/4 pt-5 min-h-screen md:w-8/12">{children}</div>
         </div>
-        <footer className="bg-zinc-800 shadow-inner shadow-slate-600 min-h-52 flex flex-row"></footer>
+        <footer className="flex flex-col md:flex-row justify-center w-full bg-zinc-800 shadow-inner shadow-slate-600 min-h-52  px-5 md:px-32">
+          <FooterMenu />
+          <FooterMenu />
+          <FooterMenu />
+        </footer>
       </body>
     </html>
   );

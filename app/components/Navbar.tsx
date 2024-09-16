@@ -1,5 +1,5 @@
 "use client";
-import MenuButton from "./MenuButton";
+import MenuButton from "./buttons/MenuButton";
 import Link from "next/link";
 import { Tangerine } from "next/font/google";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -11,7 +11,7 @@ const tangerine = Tangerine({
   weight: ["700"],
 });
 
-const navbarLinks = [
+export const navbarLinks = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Blog", link: "/blog" },
   { id: 4, name: "Works", link: "/works" },
@@ -34,9 +34,9 @@ function Navbar() {
           }
         >
           {navbarLinks.map((item) => (
-            <li className="my-5" key={item.id}>
-              <MenuButton link={item.link}>{item.name}</MenuButton>
-            </li>
+            <MenuButton key={item.id} link={item.link}>
+              {item.name}
+            </MenuButton>
           ))}
         </ul>
         <div className="flex flex-row space-x-10 justify-between py-3 px-5">
@@ -56,17 +56,16 @@ function Navbar() {
           </div>
         </div>
         {showNav && (
-          <ul
-            className={
-              "md:hidden duration-300 transition-transform flex flex-col pb-4 items-center"
-            }
-          >
+          <ul className={"md:hidden flex flex-col pb-4 items-start"}>
             {navbarLinks.map((item) => (
-              <li className="my-5" key={item.id}>
-                <MenuButton func={navSeter} link={item.link}>
-                  {item.name}
-                </MenuButton>
-              </li>
+              <MenuButton
+                key={item.id}
+                func={navSeter}
+                link={item.link}
+                style="my-0.5 bg-gray-50"
+              >
+                {item.name}
+              </MenuButton>
             ))}
           </ul>
         )}

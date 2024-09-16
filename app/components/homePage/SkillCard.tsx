@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { levelCalc, iconNameGenerator } from "./utils";
+import { levelCalc, iconNameGenerator } from "../utils";
 
 interface Props {
   title: string;
