@@ -18,9 +18,7 @@ export default function AboutCard() {
       <div className="flex flex-col justify-center items-center w-[100%]">
         <span className="text-center m-3">
           <p>
-            Hi, my name is <strong>Hossein Almasi</strong>, I graduated with a
-            bachelor&apos;s degree in Software Engineering from the Technicaland
-            Vocational Training Organization of Iran.
+            Hi, my name is <strong>Hossein Almasi</strong>
           </p>
           <p>
             I&apos;m in love with programming and web development and I love
