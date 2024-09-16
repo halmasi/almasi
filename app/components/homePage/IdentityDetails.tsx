@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function IdentityDetails() {
-  //
-
   const age = Math.floor(
     (new Date().getTime() - new Date(1998, 6, 14).getTime()) /
       (1000 * 60 * 60 * 24 * 365.25)
