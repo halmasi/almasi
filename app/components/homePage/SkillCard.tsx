@@ -1,40 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
+import { levelCalc, iconNameGenerator } from "./utils";
+
 interface Props {
   title: string;
   level: number;
 }
 
 export default function Skill({ title, level }: Props) {
-  let levels;
-  let progressBarPercent;
-  switch (true) {
-    case level <= 20:
-      levels = "Beginner";
-      progressBarPercent = "w-[20%]";
-      break;
-    case level <= 40:
-      levels = "Advanced Beginner";
-      progressBarPercent = "w-[40%]";
-      break;
-    case level <= 60:
-      levels = "Competent";
-      progressBarPercent = "w-[60%]";
-      break;
-    case level <= 80:
-      levels = "Proficient";
-      progressBarPercent = "w-[80%]";
-      break;
-    default:
-      levels = "Expert";
-      progressBarPercent = "w-[100%]";
-  }
-
-  // const bgUrl =
-  //   title.replace(/\s/g, "").split(".").join("").toLowerCase() + ".png";
-
-  const bgUrl = "javascript.png";
+  const { levels, progressBarPercent } = levelCalc(level);
 
   return (
     <div className="relative max-w-xl flex flex-row flex-grow border-2 rounded-lg w-full min-h-36 md:aspect-square justify-between bg-neutral-800">
@@ -43,7 +18,7 @@ export default function Skill({ title, level }: Props) {
         width={500}
         height={0}
         quality={50}
-        src={`/icons/${bgUrl}`}
+        src={`/icons/${iconNameGenerator(title)}`}
         alt={title + "Logo"}
       />
       <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-20 before:opacity-40 before:rounded-md">
