@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
 import { levelCalc, iconNameGenerator } from "./utils";
 
 interface Props {

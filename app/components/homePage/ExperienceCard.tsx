@@ -1,12 +1,13 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
   id: number;
   title: String;
+  time: string;
 }
 
-export default function ExperienceCard({ children, id, title }: Props) {
+export default function ExperienceCard({ children, id, title, time }: Props) {
   return (
     <div
       className={`my-10 flex justify-between items-center ${
@@ -20,7 +21,8 @@ export default function ExperienceCard({ children, id, title }: Props) {
         <h3 className="font-semibold text-lg text-white"></h3>
       </div>
       <div className=" border-2 rounded-lg shadow-xl w-3/4 md:w-5/12 px-6 py-4">
-        <h2 className="mb-3 font-bold text-black text-xl">{title}</h2>
+        <h2 className="font-bold text-black text-xl">{title}</h2>
+        <h3 className="mb-3 font-bold text-black text-md">{time}</h3>
         <p className="text-gray-800 leading-tight">{children}</p>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import Titles from "./components/Titles";
 
 function notFound() {

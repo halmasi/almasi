@@ -1,6 +1,6 @@
 import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   children?: ReactNode;

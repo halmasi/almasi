@@ -1,4 +1,3 @@
-import React from "react";
 import GradientButton from "../buttons/GradientButton";
 import Image from "next/image";
 import IdentityDetails from "./IdentityDetails";
@@ -33,7 +32,7 @@ export default function AboutCard() {
             color={"from-green-600 to-green-800"}
             shadowColor={"hover:shadow-green-800/30"}
           >
-            <h2>contact me</h2>
+            <h2>Contact Me</h2>
           </GradientButton>
           <GradientButton
             link={"/works"}
@@ -41,7 +40,7 @@ export default function AboutCard() {
             color={"from-red-600 to-red-800"}
             shadowColor={"hover:shadow-red-800/30"}
           >
-            <h2>my works</h2>
+            <h2>My Resume</h2>
           </GradientButton>
         </div>
       </div>
