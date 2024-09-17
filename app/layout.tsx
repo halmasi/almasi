@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import FooterMenu from "./components/footer/FooterMenu";
+import SocialLinks from "./components/SocialLinks";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
         </div>
         <footer className="flex flex-col md:flex-row justify-center w-full bg-zinc-800 shadow-inner shadow-slate-600 min-h-52  px-5 md:px-32">
           <FooterMenu />
-          <FooterMenu />
+          <SocialLinks />
           <FooterMenu />
         </footer>
       </body>
