@@ -64,6 +64,9 @@ export default function SocialLinks() {
 
   return (
     <ul className="flex flex-col w-full justify-between">
+      <li className="text-gray-200 text-center p-5">
+        <strong>Social Medias</strong>
+      </li>
       {socials.map((item) => (
         <Link
           key={item.id}
