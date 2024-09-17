@@ -28,10 +28,11 @@ export default function RootLayout({
         <div className=" flex justify-center">
           <div className="w-3/4 pt-5 min-h-screen md:w-8/12">{children}</div>
         </div>
-        <footer className="flex flex-col md:flex-row justify-center w-full bg-zinc-800 shadow-inner shadow-slate-600 min-h-52  px-5 md:px-32">
-          <FooterMenu />
+        <footer className="flex flex-col-reverse md:flex-row justify-between  w-full bg-zinc-800 shadow-inner shadow-slate-600  px-5 md:px-32">
+          <p className="text-center self-center text-gray-200">
+            copyright 2024
+          </p>
           <SocialLinks />
-          <FooterMenu />
         </footer>
       </body>
     </html>

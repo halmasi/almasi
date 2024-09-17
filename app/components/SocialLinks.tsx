@@ -63,19 +63,11 @@ export default function SocialLinks() {
   ];
 
   return (
-    <ul className="flex flex-col w-full justify-between">
-      <li className="text-gray-200 text-center p-5">
-        <strong>Social Medias</strong>
-      </li>
+    <ul className="grid grid-flow-col-dense">
       {socials.map((item) => (
-        <Link
-          key={item.id}
-          href={item.link}
-          className="flex flex-col items-center w-full px-7 md:px-10"
-        >
-          <li className="flex flex-row items-center justify-between text-gray-200 transition-colors duration-150 hover:text-gray-200/50 text-lx w-full border-b border-gray-100/20">
-            <item.icon className="m-5 text-2xl" />
-            {item.title}
+        <Link title={item.title} key={item.id} href={item.link}>
+          <li className=" text-gray-200 transition-colors duration-150 hover:text-gray-200/50 text-lg">
+            <item.icon className="m-1 md:m-2 lg:m-5 text-2xl" />
           </li>
         </Link>
       ))}
