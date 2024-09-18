@@ -10,9 +10,11 @@ export default function Home() {
         <Titles>{"<Hossein Almasi/>"}</Titles>
       </header>
       <main className="flex flex-col justify-between space-y-5">
-        <AboutCard />
-        <Experiences />
-        <Skills />
+        <article>
+          <AboutCard />
+          <Experiences />
+          <Skills />
+        </article>
       </main>
     </>
   );

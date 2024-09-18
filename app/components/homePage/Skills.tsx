@@ -21,7 +21,7 @@ export default function Skills() {
   ];
 
   return (
-    <>
+    <section>
       <h2 className="text-2xl md:text-center border-b-2">
         <strong>Skills</strong>
       </h2>
@@ -31,6 +31,6 @@ export default function Skills() {
           <Skill key={skill.id} title={skill.title} level={skill.level} />
         ))}
       </div>
-    </>
+    </section>
   );
 }

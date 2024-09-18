@@ -29,7 +29,7 @@ export default function Experiences() {
   ];
 
   return (
-    <>
+    <section>
       <div className="relative">
         <h2 className="text-2xl md:text-center border-b-2">
           <strong>Experiences</strong>
@@ -57,6 +57,6 @@ export default function Experiences() {
         <br />
         <strong>The journey goes on</strong>
       </h2>
-    </>
+    </section>
   );
 }

@@ -4,7 +4,7 @@ import IdentityDetails from "./IdentityDetails";
 
 export default function AboutCard() {
   return (
-    <div className="container flex flex-col rounded-2xl border-[.5px] border-gray-300 self-center md:flex-row">
+    <section className="container flex flex-col rounded-2xl border-[.5px] border-gray-300 self-center md:flex-row">
       <Image
         width={500}
         height={0}
@@ -44,6 +44,6 @@ export default function AboutCard() {
           </GradientButton>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

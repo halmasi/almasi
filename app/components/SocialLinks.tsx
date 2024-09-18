@@ -67,7 +67,7 @@ export default function SocialLinks() {
       {socials.map((item) => (
         <Link title={item.title} key={item.id} href={item.link}>
           <li className=" text-gray-200 transition-colors duration-150 hover:text-gray-200/50 text-lg">
-            <item.icon className="m-1 md:m-2 lg:m-5 text-2xl" />
+            <item.icon className="m-1 lg:m-5 text-2xl" />
           </li>
         </Link>
       ))}
