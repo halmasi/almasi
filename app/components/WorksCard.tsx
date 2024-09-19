@@ -26,7 +26,9 @@ export default function WorksCard({
           className="w-full object-cover rounded-md"
         />
         <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-0 before:opacity-20 before:rounded-md">
-          <h2 className="text-white text-2xl font-bold">{title}</h2>
+          <h2 className="text-white text-2xl font-bold drop-shadow-sm">
+            {title}
+          </h2>
         </div>
       </div>
       <p className="text-center py-5">{describtion}</p>
