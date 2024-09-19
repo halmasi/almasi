@@ -17,7 +17,7 @@ export default function WorksCard({
 }: Props) {
   return (
     <div className=" flex flex-col w-full shadow-sm border items-center py-5 px-4 rounded-xl">
-      <div className="relative flex flex-row flex-grow border-2 rounded-lg w-[calc(100%-10px)] aspect-square justify-center bg-neutral-800 transition-transform duration-500 hover:scale-110">
+      <div className="relative flex flex-row flex-grow border-2 rounded-lg w-[calc(100%-10px)] aspect-square justify-center bg-neutral-800 transition-transform duration-300 hover:scale-[102%]">
         <Image
           src={picture}
           alt={title}

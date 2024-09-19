@@ -46,8 +46,10 @@ export default function page() {
   ];
   return (
     <>
-      <Titles>My recent works</Titles>
-      <div className="self-center container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-5 place-items-center">
+      <header>
+        <Titles>My recent works</Titles>
+      </header>
+      <main className="self-center container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-5 place-items-center">
         {works.map((item) => (
           <WorksCard
             key={item.id}
@@ -57,7 +59,7 @@ export default function page() {
             link={item.link}
           />
         ))}
-      </div>
+      </main>
     </>
   );
 }
