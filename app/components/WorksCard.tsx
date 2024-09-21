@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 interface Props {
-  id?: number;
   title: string;
   describtion: string;
   picture: string;
@@ -9,7 +8,6 @@ interface Props {
 }
 
 export default function WorksCard({
-  id,
   title,
   describtion,
   picture,
@@ -21,7 +19,7 @@ export default function WorksCard({
         <Image
           src={picture}
           alt={title}
-          width={500}
+          width={100}
           height={0}
           className="w-full object-cover rounded-md"
         />
