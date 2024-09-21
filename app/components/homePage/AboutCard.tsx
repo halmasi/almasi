@@ -5,7 +5,7 @@ import IdentityDetails from "./IdentityDetails";
 export default function AboutCard() {
   return (
     <section className="container flex flex-col w-full rounded-2xl border-[.5px] border-gray-300 self-center md:flex-row">
-      <div className="relative w-full mx-auto h-auto rounded-t-2xl md:w-6/12 overflow-hidden md:rounded-r-none md:rounded-l-2xl md:m-0 ">
+      <div className="relative w-full mx-auto h-auto rounded-t-2xl md:w-4/12 overflow-hidden md:rounded-r-none md:rounded-l-2xl md:m-0 ">
         <Image
           width={300}
           height={0}
@@ -16,7 +16,7 @@ export default function AboutCard() {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center w-[100%]">
+      <div className="flex flex-col justify-center items-center w-full md:w-8/12">
         <span className="text-center m-3">
           <p>
             Hi, my name is <strong>Hossein Almasi</strong>

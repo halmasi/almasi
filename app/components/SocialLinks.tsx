@@ -14,9 +14,9 @@ export default function SocialLinks() {
   const socials = [
     {
       id: 1,
-      title: "Instagram",
+      title: "YouTube",
       link: "https://instagram.com/h2almasi",
-      icon: FaSquareInstagram,
+      icon: FaYoutube,
     },
     {
       id: 2,
@@ -32,34 +32,34 @@ export default function SocialLinks() {
     },
     {
       id: 4,
-      title: "YouTube",
+      title: "Instagram",
       link: "https://instagram.com/h2almasi",
-      icon: FaYoutube,
+      icon: FaSquareInstagram,
     },
-    {
-      id: 5,
-      title: "SoundCloud",
-      link: "https://instagram.com/h2almasi",
-      icon: FaSoundcloud,
-    },
-    {
-      id: 6,
-      title: "Spotify",
-      link: "https://instagram.com/h2almasi",
-      icon: FaSpotify,
-    },
+    // {
+    //   id: 5,
+    //   title: "SoundCloud",
+    //   link: "https://instagram.com/h2almasi",
+    //   icon: FaSoundcloud,
+    // },
+    // {
+    //   id: 6,
+    //   title: "Spotify",
+    //   link: "https://instagram.com/h2almasi",
+    //   icon: FaSpotify,
+    // },
     {
       id: 7,
       title: "Telegram",
       link: "https://instagram.com/h2almasi",
       icon: FaTelegram,
     },
-    {
-      id: 8,
-      title: "X",
-      link: "https://instagram.com/h2almasi",
-      icon: FaSquareXTwitter,
-    },
+    // {
+    //   id: 8,
+    //   title: "X",
+    //   link: "https://instagram.com/h2almasi",
+    //   icon: FaSquareXTwitter,
+    // },
   ];
 
   return (
