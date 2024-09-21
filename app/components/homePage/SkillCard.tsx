@@ -11,15 +11,13 @@ export default function Skill({ title, level }: Props) {
 
   return (
     <div className="relative max-w-xl flex flex-row flex-grow border-2 rounded-lg w-full min-h-36 md:aspect-square justify-center bg-white  items-center">
-      <div className="w-[80%]">
-        <Image
-          className=" w-full object-cover rounded-md"
-          width={500}
-          height={0}
-          src={`/icons/${iconNameGenerator(title)}`}
-          alt={title + "Logo"}
-        />
-      </div>
+      <Image
+        className=" w-full object-cover rounded-md"
+        width={100}
+        height={0}
+        src={`/icons/${iconNameGenerator(title)}`}
+        alt={title + "Logo"}
+      />
       <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-0 before:opacity-20 before:rounded-md">
         <h2 className="text-black bg-white/85 border border-white/80 px-2 py-1 rounded-lg text-2xl font-bold">
           {title}
