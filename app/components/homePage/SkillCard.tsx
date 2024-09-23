@@ -15,9 +15,9 @@ export default function Skill({ title, level }: Props) {
         {title}
       </h2>
       <div className="relative w-full">
-        <div className="overflow-hidden flex flex-row flex-grow rounded-full w-full aspect-square justify-center bg-white/10  items-center">
+        <div className="overflow-hidden flex flex-row flex-grow rounded-full w-full aspect-square justify-center bg-white  items-center">
           <Image
-            className=" w-full object-cover rounded-full bg-white"
+            className=" w-full object-cover rounded-full"
             width={100}
             height={0}
             src={`/icons/${iconNameGenerator(title)}`}
