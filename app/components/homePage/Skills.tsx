@@ -26,7 +26,7 @@ export default function Skills() {
         <strong>Skills</strong>
       </h2>
 
-      <div className="self-center container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-5 place-items-center mt-3">
+      <div className="self-center grid md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-16 pb-5 place-items-center mt-5">
         {skills.map((skill) => (
           <Skill key={skill.id} title={skill.title} level={skill.level} />
         ))}
