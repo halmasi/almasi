@@ -63,7 +63,7 @@ export default function SocialLinks() {
   ];
 
   return (
-    <ul className="grid grid-flow-col-dense">
+    <ul className="grid grid-flow-col-dense justify-between">
       {socials.map((item) => (
         <Link title={item.title} key={item.id} href={item.link}>
           <li className=" text-gray-200 transition-colors duration-150 hover:text-gray-200/50 text-lg">

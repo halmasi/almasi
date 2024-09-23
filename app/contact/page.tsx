@@ -18,7 +18,7 @@ export default function page() {
               </div>
               <div className="flex flex-row items-center">
                 <MdKeyboardArrowRight className="md:hidden" />
-                <span className="flex flex-row w-fit">
+                <div className="flex flex-row w-fit">
                   <a
                     className="border-b-4 w-0 border-red-800 transition-all duration-200 hover:w-full"
                     target="_blank"
@@ -26,7 +26,7 @@ export default function page() {
                   >
                     Contact@Almasi.info
                   </a>
-                </span>
+                </div>
               </div>
             </li>
             <li className="grid grid-cols-1 md:grid-cols-2 md:space-x-3 items-start hover:text-red-900">
@@ -37,7 +37,7 @@ export default function page() {
 
               <div className="flex flex-row items-center">
                 <MdKeyboardArrowRight className="md:hidden" />
-                <span className="flex flex-row w-fit">
+                <div className="flex flex-row w-fit">
                   <a
                     className="border-b-4 w-0 border-red-800 transition-all duration-200 hover:w-full"
                     target="_blank"
@@ -45,7 +45,7 @@ export default function page() {
                   >
                     @H2almasi
                   </a>
-                </span>
+                </div>
               </div>
             </li>
           </ul>
