@@ -10,7 +10,7 @@ export default function Skill({ title, level }: Props) {
   const { levels, progressBarPercent } = levelCalc(level);
 
   return (
-    <div className="flex flex-col w-full space-y-3 max-w-64 md:max-w-none">
+    <div className="flex flex-col w-full space-y-3 max-w-64">
       <h2 className="text-black text-center pt-3 pb-1 rounded-lg lg:text-xl font-bold">
         {title}
       </h2>
@@ -28,7 +28,7 @@ export default function Skill({ title, level }: Props) {
             <div className="flex flex-col w-full bg-white/85 items-center justify-center"></div>
             <div className=" flex flex-col justify-end w-full h-full">
               <div className="w-full flex flex-col justify-end">
-                <p className="text-gray-900 text-center leading-tight pb-5 bg-white bg-opacity-75">
+                <p className="text-gray-900 text-sm text-center leading-tight pb-5 bg-white bg-opacity-75">
                   <strong>{levels}</strong>
                 </p>
               </div>

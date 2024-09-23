@@ -26,7 +26,9 @@ export default function RootLayout({
         </p>
         <Navbar />
         <div className=" flex justify-center">
-          <div className="w-3/4 pt-5 min-h-screen md:w-8/12">{children}</div>
+          <div className="flex flex-col w-3/4 pt-5 min-h-screen md:w-8/12">
+            {children}
+          </div>
         </div>
         <footer className="flex flex-col-reverse md:flex-row justify-between  w-full bg-green-900 bg-[url('/pcb.svg')] shadow-inner shadow-slate-600  px-5 md:px-32">
           <Copyright />

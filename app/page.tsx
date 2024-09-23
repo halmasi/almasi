@@ -9,8 +9,8 @@ export default function Home() {
       <header>
         <Titles>{"<Hossein Almasi/>"}</Titles>
       </header>
-      <main className="flex flex-col justify-between space-y-5">
-        <article>
+      <main className="flex flex-col justify-between items-center space-y-5">
+        <article className="flex flex-col items-center">
           <AboutCard />
           <Experiences />
           <Skills />

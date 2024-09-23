@@ -15,16 +15,17 @@ export default function WorksCard({
 }: Props) {
   return (
     <div className=" flex flex-col w-full shadow-sm border items-center py-5 px-4 rounded-xl">
-      <Image
-        src={picture}
-        alt={title}
-        width={100}
-        height={0}
-        className="w-full object-cover shadow-md rounded-full transition-all duration-1000 hover:rounded-none"
-      />
-      <h2 className="text-gray-700 text-2xl font-bold drop-shadow-sm">
-        {title}
-      </h2>
+      <h2 className="text-2xl font-bold drop-shadow-sm">{title}</h2>
+      <div className="relative flex flex-row flex-grow border-2 rounded-lg w-[calc(100%-10px)] justify-center bg-neutral-800 transition-transform duration-300 hover:scale-[100.5%]">
+        <Image
+          src={picture}
+          alt={title}
+          width={100}
+          height={0}
+          className="w-full object-cover rounded-md max-h-[50svh]"
+        />
+        <div className="absolute inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-0 before:opacity-20 before:rounded-md"></div>
+      </div>
       <p className="text-center py-5">{describtion}</p>
       <a
         href={link}
