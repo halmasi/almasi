@@ -21,8 +21,8 @@ export default function Skills() {
   ];
 
   return (
-    <section>
-      <h2 className="text-2xl md:text-center border-b-2">
+    <section className="w-full">
+      <h2 className="text-2xl md:text-center border-b-2 w-full">
         <strong>Skills</strong>
       </h2>
 

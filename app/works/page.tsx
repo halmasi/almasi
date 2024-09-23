@@ -49,7 +49,7 @@ export default function page() {
       <header>
         <Titles>My recent works</Titles>
       </header>
-      <main className="self-center container pb-5 place-items-center">
+      <main className="self-center container pb-5 place-items-center space-y-5">
         {works.map((item) => (
           <WorksCard
             key={item.id}
