@@ -48,7 +48,7 @@ export default function Experiences() {
           </ExperienceCard>
         ))}
       </div>
-      <h2 className="text-2xl md:text-center text-red-900 border-b-2">
+      <h2 className="text-2xl md:text-center text-red-900 border-b-2 ml-7 md:ml-0">
         <strong>.</strong>
         <br />
         <strong>.</strong>
