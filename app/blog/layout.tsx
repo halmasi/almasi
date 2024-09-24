@@ -6,17 +6,17 @@ export default function layout({ children }: { children: React.ReactNode }) {
       <header>
         <form
           className="flex flex-row self-center w-full justify-center mb-5"
-          action="search"
+          action="/blog/search"
         >
           <input
-            className="px-4 bg-white rounded-l-full border border-r-0 border-red-900 shadow-md focus:shadow-lg focus:border-red-500"
+            className="px-4 h-auto w-auto bg-white rounded-l-full border border-r-0 transition-all duration-500 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:border-red-900"
             type="search"
-            name="searchbox"
+            name="q"
             id="searchbox"
             placeholder={`Search ...`}
           />
           <button
-            className="px-4 py-2 rounded-r-full bg-green-800 text-white border border-l-0 border-red-900"
+            className="w-14 h-10 flex flex-col items-center justify-center rounded-r-full transition-all duration-100 bg-green-700 text-white shadow-md hover:bg-green-500 hover:text-lg focus:bg-green-900 focus:shadow-sm focus:text-sm"
             type="submit"
           >
             <FaMagnifyingGlass />
