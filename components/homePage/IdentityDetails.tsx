@@ -54,13 +54,17 @@ export default function IdentityDetails() {
       </li>
       <li>
         <div className="group relative flex flex-col justify-center mb-5">
-          <div className="flex flex-row items-center space-x-2">
-            <FaBook className="text-2xl md:text-base" />
+          <div className="flex flex-col items-start">
             <p>
-              <strong>Education:</strong> bachelor&apos;s of Software
-              Engineering
+              <span className="flex flex-row items-center space-x-5">
+                <FaBook />
+                <strong>Education:</strong>
+              </span>
             </p>
-            <BsFillInfoCircleFill className="text-sm text-gray-500" />
+            <p className="flex flex-row items-center space-x-2">
+              <span>bachelor&apos;s of Software Engineering</span>
+              <BsFillInfoCircleFill className="text-gray-500 text-xl md:text-base" />
+            </p>
           </div>
           <span className="absolute scale-0 z-20 transition-all rounded bg-gray-800 p-2 mt-24 md:mt-14 text-xs text-white group-hover:scale-100">
             from Technicaland Vocational Training Organization of Iran
