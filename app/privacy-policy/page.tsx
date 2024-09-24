@@ -1,8 +1,7 @@
-import BlogBack from "@/components/BlogBack";
 export default function PrivacyPolicy() {
   return (
     <main>
-      <BlogBack>
+      <div className="bg-white border-2 rounded-lg p-4 border-neutral-200 min-h-screen px-5 lg:px-20 mb-10">
         <h2 className="font-bold text-2xl pb-5">Privacy Policy</h2>
         <p>
           This Privacy Policy outlines how we collect, use, and protect your
@@ -51,7 +50,7 @@ export default function PrivacyPolicy() {
           If you have any questions about our Privacy Policy, please contact us
           at info@almasi.info.
         </p>
-      </BlogBack>
+      </div>
     </main>
   );
 }

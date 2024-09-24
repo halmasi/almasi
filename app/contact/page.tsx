@@ -5,7 +5,9 @@ import { BiLogoTelegram } from "react-icons/bi";
 export default function page() {
   return (
     <>
-      <Titles>Contact me</Titles>
+      <header>
+        <Titles>Contact me</Titles>
+      </header>
       <main className="w-full">
         <section className="flex flex-col">
           <ul className="self-center md:text-xl space-y-5">

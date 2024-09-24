@@ -1,10 +1,9 @@
 import Link from "next/link";
-import BlogBack from "@/components/BlogBack";
 
 export default function TermsAndConditions() {
   return (
     <main>
-      <BlogBack>
+      <div className="bg-white border-2 rounded-lg p-4 border-neutral-200 min-h-screen px-5 lg:px-20 mb-10">
         <h2 className="font-bold text-2xl pb-5">Terms and Conditions</h2>
         <p>
           Welcome to Hossein Almasi website! Please read these Terms and
@@ -42,7 +41,7 @@ export default function TermsAndConditions() {
           Please refer to our <Link href="/privacy-policy">Privacy Policy</Link>{" "}
           for information on how we collect and use your personal information.
         </p>
-      </BlogBack>
+      </div>
     </main>
   );
 }
