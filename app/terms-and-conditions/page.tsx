@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BlogBack from "../../components/BlogBack";
+import BlogBack from "@/components/BlogBack";
 
 export default function TermsAndConditions() {
   return (

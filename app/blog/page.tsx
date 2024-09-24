@@ -1,5 +1,5 @@
-import BlogCard from "../../components/BlogCard";
-import Titles from "../../components/Titles";
+import BlogCard from "@/components/BlogCard";
+import Titles from "@/components/Titles";
 const weblogs = [
   {
     id: 1,
