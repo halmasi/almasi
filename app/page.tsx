@@ -6,9 +6,7 @@ import Titles from "@/components/Titles";
 export default function Home() {
   return (
     <>
-      <header>
-        <Titles>{"<Hossein Almasi/>"}</Titles>
-      </header>
+      <Titles>{"<Hossein Almasi/>"}</Titles>
       <main className="flex flex-col justify-between items-center space-y-5">
         <article className="flex flex-col items-center">
           <AboutCard />

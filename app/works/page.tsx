@@ -46,9 +46,7 @@ export default function page() {
   ];
   return (
     <>
-      <header>
-        <Titles>My recent works</Titles>
-      </header>
+      <Titles>My recent works</Titles>
       <main className="self-center container pb-5 place-items-center space-y-5">
         {works.map((item) => (
           <WorksCard

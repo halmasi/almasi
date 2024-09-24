@@ -63,7 +63,7 @@ export default function IdentityDetails() {
             </p>
             <p className="flex flex-row items-center space-x-2">
               <span>bachelor&apos;s of Software Engineering</span>
-              <BsFillInfoCircleFill className="text-gray-500 text-xl md:text-base" />
+              <BsFillInfoCircleFill className="text-gray-500 text-xl md:text-sm" />
             </p>
           </div>
           <span className="absolute scale-0 z-20 transition-all rounded bg-gray-800 p-2 mt-24 md:mt-14 text-xs text-white group-hover:scale-100">

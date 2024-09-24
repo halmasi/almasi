@@ -29,9 +29,7 @@ const weblogs = [
 function Blog() {
   return (
     <>
-      <header>
-        <Titles>My Blogs</Titles>
-      </header>
+      <Titles>My Blogs</Titles>
       <main className="self-center container grid md:grid-cols-2 gap-5 pb-5 place-items-center">
         {weblogs.map((item) => (
           <BlogCard

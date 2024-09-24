@@ -5,19 +5,19 @@ export default function Experiences() {
     {
       id: 1,
       title: "Self Employed - Freelancer",
-      time: "2010 - 2016",
+      time: "Sep 2009 - Jun 2016 · 6 yrs 10 mos",
       text: "Working part time as a hobby, when I was a highschool student. I tried to entertain my self and make some money as a freelancer, mustly making flash (action script) projects and wordpress websites.",
     },
     {
       id: 2,
       title: "Print Designer at Negareh",
-      time: "2016 - 2017",
+      time: "Jul 2016 - Sep 2017 · 1 yr 3 mos",
       text: "Before getting into unirevsity, I was fasinated by the print world and wanted to do print designing, so I was hired in Negareh Advertisement group located in Hammedan/Iran and designed different works for a year.",
     },
     {
       id: 3,
       title: "Self Employed - Freelancer",
-      time: "2017 - 2019",
+      time: "Sep 2017 - Oct 2019 · 2 yrs 2 mos",
       text: "Working and studying at the same time is hard, but for me studying CS (softwere engineering) and working as a freelancer / web developer was enjoyable.",
     },
     {

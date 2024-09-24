@@ -22,7 +22,7 @@ export default function ExperienceCard({ children, id, title, time }: Props) {
       </div>
       <div className=" border-2 rounded-lg shadow-xl w-3/4 md:w-5/12 px-6 py-4">
         <h2 className="font-bold text-black text-xl">{title}</h2>
-        <h3 className="mb-3 font-bold text-black text-md">{time}</h3>
+        <h3 className="mb-3 font-bold text-gray-400 text-sm">{time}</h3>
         <p className="text-gray-800 leading-tight">{children}</p>
       </div>
     </div>
