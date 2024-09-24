@@ -1,4 +1,4 @@
-import Titles from "./components/Titles";
+import Titles from "../components/Titles";
 
 function notFound() {
   return (

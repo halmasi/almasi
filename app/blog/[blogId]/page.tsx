@@ -1,5 +1,5 @@
-import BlogBack from "@/app/components/BlogBack";
-import Titles from "@/app/components/Titles";
+import BlogBack from "@/components/BlogBack";
+import Titles from "@/components/Titles";
 import { notFound } from "next/navigation";
 import React from "react";
 

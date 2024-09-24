@@ -1,5 +1,5 @@
-import Titles from "../components/Titles";
-import WorksCard from "../components/WorksCard";
+import Titles from "../../components/Titles";
+import WorksCard from "../../components/WorksCard";
 
 export default function page() {
   const works = [

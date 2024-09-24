@@ -1,7 +1,7 @@
-import AboutCard from "./components/homePage/AboutCard";
-import Experiences from "./components/homePage/Experiences";
-import Skills from "./components/homePage/Skills";
-import Titles from "./components/Titles";
+import AboutCard from "../components/homePage/AboutCard";
+import Experiences from "../components/homePage/Experiences";
+import Skills from "../components/homePage/Skills";
+import Titles from "../components/Titles";
 
 export default function Home() {
   return (

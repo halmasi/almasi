@@ -1,4 +1,4 @@
-import BlogBack from "../components/BlogBack";
+import BlogBack from "../../components/BlogBack";
 export default function PrivacyPolicy() {
   return (
     <main>
