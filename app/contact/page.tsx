@@ -2,7 +2,7 @@ import Titles from "@/components/Titles";
 import { MdOutlineMail, MdKeyboardArrowRight } from "react-icons/md";
 import { BiLogoTelegram } from "react-icons/bi";
 
-export default function page() {
+export default function Contact() {
   return (
     <>
       <header>

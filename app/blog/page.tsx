@@ -7,7 +7,7 @@ const weblogs = [
     publishDate: "2024 aug 15",
     describtion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aliquid.",
-    picture: "/icons/javascript.png",
+    picture: "/001.png",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const weblogs = [
     publishDate: "2024 aug 15",
     describtion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aliquid.",
-    picture: "/icons/javascript.png",
+    picture: "/001.png",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const weblogs = [
     publishDate: "2024 aug 15",
     describtion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aliquid.",
-    picture: "/icons/javascript.png",
+    picture: "/001.png",
   },
 ];
 function Blog() {

@@ -1,7 +1,7 @@
 import Titles from "@/components/Titles";
 import WorksCard from "@/components/WorksCard";
 
-export default function page() {
+export default function Works() {
   const works = [
     {
       id: 1,
