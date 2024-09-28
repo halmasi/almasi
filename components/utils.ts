@@ -29,7 +29,5 @@ export function levelCalc(level: number): {
 }
 
 export function iconNameGenerator(title: string): string {
-  const result =
-    title.replace(/\s/g, "").split(".").join("").toLowerCase() + ".png";
-  return result;
+  return title.replace(/\s/g, "").split(".").join("").toLowerCase() + ".png";
 }
