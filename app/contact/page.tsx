@@ -1,6 +1,7 @@
 import Titles from "@/components/Titles";
 import { MdOutlineMail, MdKeyboardArrowRight } from "react-icons/md";
 import { BiLogoTelegram } from "react-icons/bi";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
@@ -8,16 +9,16 @@ export default function Contact() {
       <header>
         <Titles>Contact me</Titles>
       </header>
-      <main className="w-full">
-        <section className="flex flex-col">
+      <main className="w-full container flex flex-col md:flex-row flex-wrap">
+        <section className="flex flex-col w-full md:w-1/2">
           <ul className="self-center md:text-xl space-y-5">
-            <li className="grid grid-cols-1 md:grid-cols-2 md:space-x-3 items-start hover:text-red-900">
+            <li className="grid grid-cols-1 items-start hover:text-red-900">
               <div className="flex flex-row items-center space-x-3">
                 <MdOutlineMail />
                 <p>Email Address:</p>
               </div>
               <div className="flex flex-row items-center">
-                <MdKeyboardArrowRight className="md:hidden" />
+                <MdKeyboardArrowRight />
                 <div className="flex flex-row w-fit">
                   <a
                     className="border-b-4 w-0 border-red-800 transition-all duration-200 hover:w-full"
@@ -29,14 +30,14 @@ export default function Contact() {
                 </div>
               </div>
             </li>
-            <li className="grid grid-cols-1 md:grid-cols-2 md:space-x-3 items-start hover:text-red-900">
+            <li className="grid grid-cols-1 items-start hover:text-red-900">
               <div className="flex flex-row items-center space-x-3">
                 <BiLogoTelegram />
                 <p>Telegram Account:</p>
               </div>
 
               <div className="flex flex-row items-center">
-                <MdKeyboardArrowRight className="md:hidden" />
+                <MdKeyboardArrowRight />
                 <div className="flex flex-row w-fit">
                   <a
                     className="border-b-4 w-0 border-red-800 transition-all duration-200 hover:w-full"
@@ -50,7 +51,9 @@ export default function Contact() {
             </li>
           </ul>
         </section>
-        <section></section>
+        <section className="w-full md:w-1/2">
+          <ContactForm />
+        </section>
       </main>
     </>
   );
