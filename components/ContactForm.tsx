@@ -18,7 +18,7 @@ export default function ContactForm() {
     >
       <p className="w-fit pr-3">Name:</p>
       <input
-        className="px-4 h-auto w-auto md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
+        className="px-4 h-auto w-full md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
         type="text"
         {...register("name")}
         required
@@ -26,7 +26,7 @@ export default function ContactForm() {
       />
       <p className="w-fit pr-3">Email:</p>
       <input
-        className="px-4 h-auto w-auto md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
+        className="px-4 h-auto w-full md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
         type="email"
         {...register("email")}
         required

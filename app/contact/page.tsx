@@ -9,10 +9,10 @@ export default function Contact() {
       <header>
         <Titles>Contact me</Titles>
       </header>
-      <main className="w-full container flex flex-col md:flex-row flex-wrap">
-        <section className="flex flex-col w-full md:w-1/2">
-          <ul className="self-center md:text-xl space-y-5">
-            <li className="grid grid-cols-1 items-start hover:text-red-900">
+      <main className="w-full flex flex-col md:flex-row flex-wrap">
+        <section className="md:w-1/2">
+          <ul className="md:text-xl space-y-5">
+            <li className="grid grid-cols-1  hover:text-red-900">
               <div className="flex flex-row items-center space-x-3">
                 <MdOutlineMail />
                 <p>Email Address:</p>
@@ -30,7 +30,7 @@ export default function Contact() {
                 </div>
               </div>
             </li>
-            <li className="grid grid-cols-1 items-start hover:text-red-900">
+            <li className="grid grid-cols-1 hover:text-red-900">
               <div className="flex flex-row items-center space-x-3">
                 <BiLogoTelegram />
                 <p>Telegram Account:</p>
@@ -52,6 +52,9 @@ export default function Contact() {
           </ul>
         </section>
         <section className="w-full md:w-1/2">
+          <h2 className="text-2xl font-bold text-center">
+            or send a Message through this form
+          </h2>
           <ContactForm />
         </section>
       </main>
