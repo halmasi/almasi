@@ -23,7 +23,7 @@ export default function BlogCard({
         <p>
           category:{" "}
           <Link className="text-red-900" href={"#"}>
-            category
+            {"category"}
           </Link>
         </p>
         <p>publish date: {publishDate}</p>
@@ -31,8 +31,8 @@ export default function BlogCard({
       <Image
         src={picture}
         alt={title}
-        width={500}
-        height={0}
+        width={200}
+        height={100}
         className="w-full object-cover rounded-md max-h-52"
       />
       <h2 className="text-2xl font-bold drop-shadow-sm">{title}</h2>

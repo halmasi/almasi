@@ -7,12 +7,11 @@ export default function AboutCard() {
     <section className="container flex flex-col w-full rounded-2xl border-[.5px] border-gray-300 self-center md:flex-row">
       <div className="relative w-full mx-auto h-auto rounded-t-2xl md:w-4/12 overflow-hidden md:rounded-r-none md:rounded-l-2xl md:m-0 ">
         <Image
-          width={300}
+          src="/personalImageWeb.jpg"
+          alt=""
+          width={500}
           height={0}
-          quality={50}
-          alt={""}
-          src={"/personalImageWeb.jpg"}
-          className=" mb-5 h-full w-full object-cover transition-all duration-300 hover:scale-110"
+          className="mb-5 h-full w-full object-cover transition-all duration-300 hover:scale-110"
         />
       </div>
 
