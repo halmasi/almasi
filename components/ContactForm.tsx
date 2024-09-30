@@ -8,8 +8,11 @@ export default function ContactForm() {
     message: string;
   };
 
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => alert(JSON.stringify(data));
+  const { register, handleSubmit, reset } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    alert(JSON.stringify(data));
+    reset();
+  };
 
   return (
     <form
