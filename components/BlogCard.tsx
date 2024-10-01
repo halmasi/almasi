@@ -28,14 +28,18 @@ export default function BlogCard({
         </p>
         <p>publish date: {publishDate}</p>
       </div>
-      <Image
-        src={picture}
-        alt={title}
-        width={200}
-        height={100}
-        className="w-full object-cover rounded-md max-h-52"
-      />
-      <h2 className="text-2xl font-bold drop-shadow-sm">{title}</h2>
+      <Link href={`blog/${id}`}>
+        <Image
+          src={picture}
+          alt={title}
+          width={200}
+          height={100}
+          className="w-full object-cover rounded-md max-h-52"
+        />
+      </Link>
+      <Link href={`blog/${id}`}>
+        <h2 className="text-2xl font-bold drop-shadow-sm">{title}</h2>
+      </Link>
       <p>{describtion}</p>
       <Link
         href={`blog/${id}`}
