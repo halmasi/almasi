@@ -16,36 +16,49 @@ export default function ContactForm() {
 
   return (
     <form
-      className="flex flex-col space-y-2 w-full  md:grid md:grid-cols-3 md:grid-flow-row items-start border p-3 rounded-2xl"
+      className="flex flex-col space-y-2 w-full items-start border p-3 rounded-2xl"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <p className="w-fit pr-3">Name:</p>
-      <input
-        className="px-4 h-auto w-full md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
-        type="text"
-        {...register("name")}
-        required
-        placeholder="Name"
-      />
-      <p className="w-fit pr-3">Email:</p>
-      <input
-        className="px-4 h-auto w-full md:col-span-2 bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
-        type="email"
-        {...register("email")}
-        required
-        placeholder="Email"
-      />
-      <p className="w-fit pr-4">Massage:</p>
+      <p className="flex flex-col md:flex-row w-full">
+        <label htmlFor="name" className="w-fit pr-3">
+          Name:
+        </label>
+        <input
+          className="px-4 h-auto w-full bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
+          type="text"
+          id="name"
+          {...register("name")}
+          required
+          placeholder="Name"
+        />
+      </p>
+      <p className="flex flex-col md:flex-row w-full">
+        <label htmlFor="email" className="w-full  md:w-fit pr-3">
+          Email:
+        </label>
+        <input
+          className="px-4 h-auto w-full bg-white rounded-full border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
+          type="email"
+          id="email"
+          {...register("email")}
+          required
+          placeholder="Email"
+        />
+      </p>
+      <label htmlFor="message" className="w-full pr-3">
+        Massage:
+      </label>
       <textarea
-        className="px-4 h-[25svh] w-full md:col-span-2 bg-white rounded-md border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
+        className="px-4 h-[25svh] w-full bg-white rounded-md border transition-all duration-200 hover:border-red-700 shadow-md focus:shadow-lg focus:outline-none focus:ring-2 ring-red-900"
         {...register("message")}
+        id="message"
         required
         placeholder="Message"
       />
       <button
         type="submit"
         name="submit"
-        className="bg-green-700 text-white col-span-3 rounded-lg p-2 hover:bg-green-800"
+        className="bg-green-700 text-white rounded-lg py-2 px-5 hover:bg-green-800 self-center"
       >
         Submit
       </button>
