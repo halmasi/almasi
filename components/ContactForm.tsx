@@ -10,8 +10,16 @@ export default function ContactForm() {
   }
 
   const { register, handleSubmit, reset } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    alert(data.message);
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    async function fetching() {
+      const response = await fetch("/api/v1/messages", {
+        method: "POST",
+        body: JSON.stringify({ message: "hello" }),
+      });
+      return response;
+    }
+    alert(fetching());
+
     reset();
   };
 
