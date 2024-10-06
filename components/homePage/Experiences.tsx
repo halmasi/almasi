@@ -35,7 +35,7 @@ export default function Experiences() {
           <strong>Experiences</strong>
         </h2>
 
-        <span className="-z-10 absolute border-red-900 left-[29px] h-[calc(100%-33px)] border md:left-1/2"></span>
+        <span className="-z-10 absolute border-red-900 left-[29px] h-[calc(100%-33px)] border md:left-1/2" />
 
         {experiencesText.map((item) => (
           <ExperienceCard

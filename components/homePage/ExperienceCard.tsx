@@ -14,7 +14,7 @@ export default function ExperienceCard({ children, id, title, time }: Props) {
         id % 2 == 0 ? "md:flex-row-reverse" : "flex-row"
       }`}
     >
-      <div className="hidden md:block md:w-5/12"></div>
+      <div className="hidden md:block md:w-5/12" />
 
       <div className="flex items-center ml-[10px] md:ml-[1px] w-[40px] aspect-square rounded-full bg-slate-50 justify-center">
         <div className=" bg-gradient-to-bl to-red-300 from-red-900 animate-pulse rounded-full w-[calc(100%-20px)] aspect-square"></div>

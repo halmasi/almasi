@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { levelCalc, iconNameGenerator } from "../utils";
+import { levelCalc, iconNameGenerator } from "../../lib/utils";
 
 interface Props {
   title: string;
@@ -25,7 +25,7 @@ export default function Skill({ title, level }: Props) {
           />
 
           <div className="absolute rounded-full overflow-hidden inset-0 flex flex-col items-center before:absolute before:inset-0 before:bg-slate-400 before:transition-opacity before:duration-300 before:hover:opacity-0 before:opacity-20 before:rounded-full">
-            <div className="flex flex-col w-full bg-white/85 items-center justify-center"></div>
+            <div className="flex flex-col w-full bg-white/85 items-center justify-center" />
             <div className=" flex flex-col justify-end w-full h-full">
               <div className="w-full flex flex-col justify-end">
                 <p className="text-gray-900 text-xs text-center leading-tight pb-5 bg-white bg-opacity-75">
@@ -37,7 +37,7 @@ export default function Skill({ title, level }: Props) {
 
           <div
             className={`absolute w-[110%] bg-gradient-conic from-1% from-red-800 via-red-600 to-gray-300 ${progressBarPercent} aspect-square -z-10 rounded-full`}
-          ></div>
+          />
         </div>
       </div>
     </div>
