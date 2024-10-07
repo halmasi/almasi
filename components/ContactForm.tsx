@@ -14,11 +14,12 @@ export default function ContactForm() {
     async function fetching() {
       const response = await fetch("/api/v1/messages", {
         method: "POST",
-        body: JSON.stringify({ message: "hello" }),
+        body: JSON.stringify({ data }),
       });
-      return response;
+      console.log(await response.arrayBuffer());
     }
-    alert(fetching());
+
+    fetching();
 
     reset();
   };
@@ -39,6 +40,7 @@ export default function ContactForm() {
           {...register("name", { required: true })}
           required
           placeholder="Name"
+          value="name"
         />
       </div>
       <div className="flex flex-col md:flex-row w-full">
@@ -52,6 +54,7 @@ export default function ContactForm() {
           {...register("email", { required: true })}
           required
           placeholder="Email"
+          value="email@web.site"
         />
       </div>
       <label htmlFor="message" className="w-full pr-3">
