@@ -1,14 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 
-interface MessageProps {
-  name: string;
-  email: string;
-  message: string;
-}
+export async function POST(request: Request) {
+	const data = await request.json();
 
-export async function POST(req: NextApiRequest) {
-  // const { message } = JSON.parse(req.body);
-  const { data } = await req.json();
-  console.log(data.message);
-  return new Response(data.message);
+	return NextResponse.json({ message: data.message });
 }
