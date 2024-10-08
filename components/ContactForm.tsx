@@ -37,7 +37,7 @@ export default function ContactForm() {
 			className='flex flex-col space-y-2 w-full items-start border p-3 rounded-2xl'
 			onSubmit={handleSubmit(onSubmit)}
 		>
-			<div className='flex flex-col md:flex-row w-full'>
+			<fieldset className='flex flex-col md:flex-row w-full'>
 				<label htmlFor='name' className='w-fit pr-3'>
 					Name:
 				</label>
@@ -49,8 +49,8 @@ export default function ContactForm() {
 					required
 					placeholder='Name'
 				/>
-			</div>
-			<div className='flex flex-col md:flex-row w-full'>
+			</fieldset>
+			<fieldset className='flex flex-col md:flex-row w-full'>
 				<label htmlFor='email' className='w-full  md:w-fit pr-3'>
 					Email:
 				</label>
@@ -62,7 +62,7 @@ export default function ContactForm() {
 					required
 					placeholder='Email'
 				/>
-			</div>
+			</fieldset>
 			<label htmlFor='message' className='w-full pr-3'>
 				Massage:
 			</label>
