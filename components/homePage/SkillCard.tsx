@@ -18,8 +18,8 @@ export default function Skill({ title, level }: Props) {
 				<div className='overflow-hidden flex flex-row flex-grow rounded-full w-full aspect-square justify-center bg-white  items-center'>
 					<Image
 						className=' w-full object-cover rounded-full'
-						width={100}
-						height={0}
+						fill
+						quality={10}
 						src={`/icons/${iconNameGenerator(title)}`}
 						alt={title + "Logo"}
 					/>
@@ -36,7 +36,7 @@ export default function Skill({ title, level }: Props) {
 					</div>
 
 					<div
-						className={`absolute w-[110%] bg-gradient-conic from-1% from-red-800 via-red-600 to-gray-300 ${progressBarPercent} aspect-square -z-10 rounded-full`}
+						className={`absolute w-[105%] bg-gradient-conic from-red-800 via-red-600 to-gray-300 from-[1%] ${progressBarPercent} aspect-square -z-10 rounded-full `} //
 					/>
 				</div>
 			</div>
