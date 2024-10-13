@@ -7,8 +7,33 @@ interface Props {
 }
 
 export default function Skill({ title, level }: Props) {
-  const { levels, progressBarPercent } = levelCalc(level);
+  const { levels } = levelCalc(level);
 
+  let progressClass =
+    "absolute w-[105%] aspect-square -z-10 rounded-full bg-gradient-conic from-red-800 via-red-600 to-gray-300 from-[1%] ";
+
+  // if (level == 20) progressClass += "via-[20%] to-[20%]";
+  // else if (level == 40) progressClass += "via-[40%] to-[40%]";
+  // else if (level == 60) progressClass += "via-[60%] to-[60%]";
+  // else if (level == 80) progressClass += "via-[80%] to-[80%]";
+  // else progressClass += "via-[100%] to-[100%]";
+
+  switch (true) {
+    case level <= 20:
+      progressClass += "via-[20%] to-[20%]";
+      break;
+    case level <= 40:
+      progressClass += "via-[40%] to-[40%]";
+      break;
+    case level <= 60:
+      progressClass += "via-[60%] to-[60%]";
+      break;
+    case level <= 80:
+      progressClass += "via-[80%] to-[80%]";
+      break;
+    default:
+      progressClass += "via-[100%] to-[100%]";
+  }
   return (
     <div className="flex flex-col w-full space-y-3 max-w-64">
       <h2 className="text-black text-center pt-3 pb-1 rounded-lg lg:text-xl font-bold">
@@ -34,8 +59,7 @@ export default function Skill({ title, level }: Props) {
               </div>
             </div>
           </div>
-
-          <div className={progressBarPercent} />
+          <div className={progressClass} />
         </div>
       </div>
     </div>
