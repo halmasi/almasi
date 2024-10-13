@@ -35,9 +35,7 @@ export default function Skill({ title, level }: Props) {
             </div>
           </div>
 
-          <div
-            className={`absolute w-[105%] bg-gradient-conic from-red-800 via-red-600 to-gray-300 from-[1%] ${progressBarPercent} aspect-square -z-10 rounded-full `} //
-          />
+          <div className={progressBarPercent} />
         </div>
       </div>
     </div>
