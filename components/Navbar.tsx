@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <div className="shadow-lg bg-white sticky top-0 z-40 ">
+    <div className="shadow-lg bg-white">
       <nav className=" pt-5 md:flex md:flex-row md:mx-16 md:justify-between flex-col items-center ">
         <ul
           className={

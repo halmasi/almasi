@@ -25,8 +25,11 @@ export default function RootLayout({
             Hi, I&apos;m <strong>Hossein Almasi</strong>, a web developer and
             programming lover
           </p>
+        </header>
+        <header className="sticky top-0 z-40">
           <Navbar />
         </header>
+
         <div className=" flex justify-center">
           <div className="flex flex-col w-3/4 pt-5 min-h-screen md:w-8/12">
             {children}
