@@ -1,14 +1,13 @@
 "use client";
 
 import { useForm, SubmitHandler } from "react-hook-form";
+export interface Inputs {
+  name: string;
+  email: string;
+  message: string;
+}
 
 export default function ContactForm() {
-  interface Inputs {
-    name: string;
-    email: string;
-    message: string;
-  }
-
   const { register, handleSubmit, reset } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     async function sendMessage() {
