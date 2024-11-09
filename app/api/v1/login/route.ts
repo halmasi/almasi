@@ -7,8 +7,9 @@ export async function GET() {
 export async function POST(request: Request) {
 	const data = await request.json();
 
-	const username = data.username;
+	const email = data.email;
 	const password = data.password;
+	console.log(email, password);
 	//new login request
 	return NextResponse.json({
 		message: "new cookie has been set, you are now logged in",
