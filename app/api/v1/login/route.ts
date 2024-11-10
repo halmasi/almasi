@@ -2,8 +2,15 @@ import { db } from "@/lib/db";
 import { verifyPassword } from "@/lib/hash";
 import { NextResponse } from "next/server";
 import * as jwt from "jsonwebtoken";
-export async function GET() {
-  return new Response(`this is login route`);
+import { cookies } from "next/headers";
+
+export async function GET(request: Request) {
+  const cookieStore = await cookies();
+  const token = cookieStore.get("token");
+  const cookie = request.headers.getSetCookie();
+  console.log(cookie);
+  let state = token;
+  return NextResponse.json({ state });
 }
 
 export async function POST(request: Request) {
