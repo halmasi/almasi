@@ -7,8 +7,7 @@ import { cookies } from "next/headers";
 export async function GET(request: Request) {
   const cookieStore = await cookies();
   const token = cookieStore.get("token");
-  const cookie = request.headers.getSetCookie();
-  console.log(cookie);
+  console.log(token);
   let state = token;
   return NextResponse.json({ state });
 }
