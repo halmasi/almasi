@@ -1,16 +1,32 @@
 import crypto from "node:crypto";
 
-export function hashPassword(password: string): string {
-  const salt = crypto.randomBytes(16).toString("hex");
-  return crypto.scryptSync(password, salt, 64).toString("hex") + ":" + salt;
+export async function hashPassword(password: string) {
+	const result = await fetch("/api/v1/auth/hash", {
+		method: "POST",
+		body: JSON.stringify({ password }),
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
+	const hashed = await result.json();
+	return hashed.data;
 }
 
-export function verifyPassword(
-  storedPassword: string,
-  suppliedPassword: string
-): boolean {
-  const [hashPassword, salt] = storedPassword.split(":");
-  const hashedPasswordBuffer = Buffer.from(hashPassword, "hex");
-  const suppliedPasswordBuffer = crypto.scryptSync(suppliedPassword, salt, 64);
-  return crypto.timingSafeEqual(hashedPasswordBuffer, suppliedPasswordBuffer);
+export async function verifyPassword(
+	storedPassword: string,
+	suppliedPassword: string,
+) {
+	const data = await fetch("/api/v1/auth/hash", {
+		method: "POST",
+		body: JSON.stringify({ storedPassword, suppliedPassword }),
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
+	const result = await data.json();
+	return result.data;
 }
+
+export const secret: Uint8Array = new TextEncoder().encode(
+	process.env.SECRET_KEY,
+);

@@ -20,6 +20,5 @@ export async function DELETE(request: Request, context: any) {
 	const { params } = context;
 	const data = params.messageId;
 	await db.message.delete({ where: { id: data } });
-	//delete message by id
 	return NextResponse.json({ messageid: `deleted message id: ${data}` });
 }

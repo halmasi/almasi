@@ -1,8 +1,14 @@
+import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 
 export async function GET() {
 	// get all post writen by me
-	return new Response(`these are all posts`);
+	const data = await db.post.findMany({
+		orderBy: {
+			createdAt: "desc",
+		},
+	});
+	return NextResponse.json({ data });
 }
 
 export async function POST(request: Request) {
